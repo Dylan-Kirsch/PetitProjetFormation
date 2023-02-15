@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+}
+
+
+/***** BARRE DE NAVIGATION **********************/
+
+.navbar {
+    padding: 0px;
+    margin: 0;
+    background-color: #000;
+}
+
+#logo {
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    margin: 0 40px;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 950;
+    text-shadow: 0 0 8px #000;
+}
+
+nav li a:hover {
+    color: #fff!important;
+    border: 3px solid #fff;
+    border-radius: 25px;
+}
+
+nav .active {
+    background-color: #c000007a;
+    border-radius: 25px;
+}
+
+
+/**** BOUTIQUE ************************/ 
+
+#bread {
+    margin-top: 6%;
+}
+
+#bread ul {
+    padding: 5px 21px;
+    margin-bottom: 1rem;
+    background: #d0d0d0;
+}
+
+#bread h1 {
+    padding: 2% 0 0 2%;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+/**** CARDS ***********/
+
+.container {
+    display: flex;
+    margin: 10px 0 0 64px;
+    width: 91%;
+    flex-wrap: wrap;
+}
+
+.card h3 {
+    padding: 10px 20px 5px;
+    font-size: 20px;
+}
+
+.card {
+    margin: 13px;
+    width: 22%;
+    padding-top: 10px;
+    flex: none;
+    box-shadow: -1px 3px 25px -10px #000;
+}
+
+.card:hover {
+    box-shadow: -1px 3px 25px -4px #006eff;
+    transition: .7s;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn-primary {
+    width: 63px;
+    border-start-start-radius: 50px;
+    border-start-end-radius: 50px;
+    border: #0a53be;
+}
+
+/**** CARDS PLAYSTATION ********/
+
+#playstation .btn-primary:hover {
+    background-color: #00b9dec2;
+    color: #000;
+    border: none;
+}
+
+/**** CARDS XBOX ********/
+
+.xboxx {
+    padding: 2% 0 0 2%;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+#xbox .card:hover {
+    box-shadow: -1px 3px 25px -3px #14c700;
+    transition: .7s;
+}
+
+#xbox .btn-primary {
+    background: #0ac500;
+    border: #0ac500;
+}
+
+#xbox .btn-primary:hover {
+    background-color: #00ff599c;
+    color: #000;
+    border: none;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+

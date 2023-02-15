@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+}
+
+/***** BARRE DE NAVIGATION *****************/
+
+.navbar {
+    padding: 0px;
+    margin: 0;
+    background-color: #00000082;
+}
+
+#logo {
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    margin: 0 40px;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 950;
+    text-shadow: 0 0 8px #000;
+}
+
+nav li a:hover {
+    color: #fff!important;
+    border: 3px solid #fff;
+    border-radius: 25px;
+}
+
+nav .active {
+    background-color: #c000007a;
+    border-radius: 25px;
+}
+
+
+/**** CAROUSEL *****************************/
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+
+/**** BOUTIQUE ***************************/
+
+.shop {
+    margin: 85px 0;
+    text-align: center;
+    font-weight: 950;
+    font-size: 55px;
+    font-family: serif;
+}
+
+#entête p {
+    margin-left: 5%;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+#entête span {
+    margin-left: 73%;
+    font-size: 17px;  
+}
+
+/** CARDS **/
+
+.container {
+    display: flex;
+}
+
+.card h3 {
+    padding: 10px 20px 5px;
+}
+
+.card {
+    margin: 15px;
+    padding-top: 10px;
+    box-shadow: -1px 3px 25px -12px #000;
+}
+
+.card:hover {
+    box-shadow: -1px 3px 25px -6px #ff7000;
+    transition: .7s;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    width: 134px;
+    align-self: center;
+}
+
+.btn-primary:hover {
+    background-color: #b4b4b4a1;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+
+
+/***** FOOTER *******************/
+
+footer {
+    margin-top: 65px;
+}
