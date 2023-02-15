@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url("./index.css");
+
+
+body {
+    background: #ebebeb;
+}
+
+/****** FOND GALLERY *******/
+
+#mgsh {
+    margin-bottom: 38px;
+}
+
+#mgi {
+    background: #fff;
+    padding: 1px 0px;
+}
+
+
+h2 {
+    margin: 15px 0 0px 24px;
+    font-weight: 600;
+}
+
+.jouet {
+    margin: 25px 0px 0px 104px;
+    padding-bottom: 25px;
+    background: #f5f5f5;
+    box-shadow: 0px 0px 24px -3px #ff006a5e;
+    border-radius: 30px;
+}
+
+.new h3 {
+    padding-top: 10px;
+    margin-left: 25px;
+}
+
+#adolescent {
+    margin: 39px 0 0px -10px;
+    padding-left: 45px;
+    width: 102%;
+    background: #dfdfdf;
+    border-radius: 15px;
+}
+
+/*********  CARD ***********/
+
+.card {
+    width: 15%;
+    margin: 55px 0px 5px 50px;
+    padding: 0;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px -5px #000000;
+    display: inline-block;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 19px -5px #3c3c3c;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .container {
+    margin: auto;
+    padding-top: 10px;
+}
+
+#title, #prix {
+    font-size: 16px;
+}
+
+#types {
+    margin: 3px -10px 0px -10px;
+    padding-left: 18px;
+    font-weight: 600;
+    color: #777777b3;
+    font-size: 17px;
+    border-bottom: 1px solid #00000017;
+}
+
+#title {
+    color: #000000e6;
+    text-align: center;
+    margin: 5px 0px 3px 0px;
+    font-weight: 600;
+}
+
+#prix {
+    text-align: left;
+    margin: 5px 8px;
+    color: #b100fe;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

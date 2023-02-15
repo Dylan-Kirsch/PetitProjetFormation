@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url("./index.css");
+
+div {
+    display: block;
+    justify-content: center;
+}
+
+
+.dropbtn {
+    background-color: #21c900;
+    color: #fdfdfd;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #22e300;
+}
+
+.drop {
+   position: relative;
+   margin: 50px 0px 10px 50px;
+   width: 4%;
+}
+
+.drop-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.35);
+   z-index: 1;
+}
+
+.drop-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-content a:hover {
+    background-color: #ddd;
+}
+
+.drop:hover .drop-content {
+    display: block;
+    margin-top: 0px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/**********  CARD **********/
+
+.card {
+    width: 15%;
+    margin: 55px 0px 5px 50px;
+    background-color: #dadada;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+    padding-top: 10px;
+    
+}
+
+#title {
+    color: #000;
+    text-align: center;
+    margin: 3px 0px 3px 0px;
+}
+
+#prix {
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+

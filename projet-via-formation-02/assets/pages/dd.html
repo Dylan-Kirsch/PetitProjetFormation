@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="">
+
+
+
+<?php
+require_once '../models/model.php';
+// require_once'./assets/models/model.php';
+include_once('./nav.php');
+
+
+$pdo = pdo_connect();
+$request = $pdo ->prepare('SELECT `id`, `categorie`, `model`, `marque`, `nom`, `prix`, `img`, `plateforme`, `pertinence`, `filtre` FROM artciles');
+$request ->execute();
+$boutiques = $request->fetchALL(PDO::FETCH_ASSOC);
+
+?>
+
+
+<?php 
+foreach($boutiques as $boutique) {
+}
+?>
+
+<?//=$boutique['categorie']?>
+<?//=$boutique['model']?>
+<?//=$boutique['img']?>
+<?//=$boutique['marque']?>
+<?//=$boutique['nom']?>
+<?//=$boutique['prix']?>
+<?//=$boutique['plateforme']?>
+<?//=$boutique['pertinence']?>
+<?//=$boutique['filtre']?> 
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../css/boutiques.css"/>
+    
+    <title>boutiques</title>
+</head>
+
+<body>
+
+    <div class="drop">
+
+        <button class="dropbtn" >Filtres</button>
+
+        <div class="drop-content">
+            <a href="#" ><?=$boutique['filtre']?></a>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="container">
+
+            <!-- <img src="assets\images\beyond-good-and-evil.jpg" > -->
+            <img src="<?=$boutique['img']?>" alt="image">
+            <div id="title"><?=$boutique['categorie']?></div>
+            <div id="prix"><?=$boutique['prix']?></div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="container">
+
+            <img src="assets\images\Chocola-Vanilla.jpg" >
+            <div id="title"><?=$boutique['nom']?></div>
+            <div id="prix"><?=$boutique['prix']?></div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="container">
+
+            <img src="assets\images\figurine-pop.jfif" >
+            <div id="title"><?=$boutique['categorie']?></div>
+            <div id="prix"><?=$boutique['prix']?></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
